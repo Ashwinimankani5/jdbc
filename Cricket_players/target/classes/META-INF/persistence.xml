@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <persistence xmlns="http://java.sun.com/xml/ns/persistence"  version="2.0">
+     <persistence-unit name="teamunit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	<!-- Class tag defines mapping between  object to tables or tables to object -->
+	<!--  number DTO/POJO class equal to  number class tag -->
+        <class>com.xworkz.PlayersDTO.Country</class>
+       <class>com.xworkz.PlayersDTO.Players</class>
+       <class>com.xworkz.PlayersDTO.Team</class>
+       <class>com.xworkz.PlayersDTO.State</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/xworkz"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="Xworkzodc@123"/>
+            
+            <!-- hibernate dailect is a specific DB. dailect is responsible for generating sql query 
+            specific to DATABASE.
+            
+            it is used to convert java data types to database data types. -->
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>  <!-- it will display the query -->
+            <property name="hibernate.format_sql" value="true"/>   <!--it will format query  -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/> <!--auto command tells JPA to create/update/drop-create etc table into DB.
+             HBM( hibernate mapping) to DDL(data defination language)  -->
+        </properties>
+    </persistence-unit>  
+     <persistence-unit name="emp" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	<!-- Class tag defines mapping between  object to tables or tables to object -->
+	<!--  number DTO/POJO class equal to  number class tag -->
+        <class>com.xworkz.employee.Employee</class>
+       
+
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/xworkz"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="Xworkzodc@123"/>
+            
+            <!-- hibernate dailect is a specific DB. dailect is responsible for generating sql query 
+            specific to DATABASE.
+            
+            it is used to convert java data types to database data types. -->
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>  <!-- it will display the query -->
+            <property name="hibernate.format_sql" value="true"/>   <!--it will format query  -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/> <!--auto command tells JPA to create/update/drop-create etc table into DB.
+             HBM( hibernate mapping) to DDL(data defination language)  -->
+        </properties>
+    </persistence-unit>  
+      </persistence>

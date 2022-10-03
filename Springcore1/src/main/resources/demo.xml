@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="d" class="com.xworkz.spring.Demo"> 
+    <property name= "msg" value = "welcome to xworkz"></property> 
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+   
+
+    <!-- more bean definitions go here -->
+<!-- in spring been is considered as object. and here line no7 &8 meaning as
+	 Demo demo  = new Demo();
+	 demo.setName("welcome to xworkz");
+ -->
+</beans>
