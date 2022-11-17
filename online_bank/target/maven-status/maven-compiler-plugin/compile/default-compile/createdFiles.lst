@@ -1,0 +1,16 @@
+com\xworkz\controller\CustomerController.class
+com\xworkz\configure\SpringDispatcherInitializer.class
+com\xworkz\service\CustomerService.class
+com\xworkz\dao\BankDaoImpl.class
+com\xworkz\configure\DBConfiguration.class
+com\xworkz\service\BankService.class
+com\xworkz\dao\CustomerDAO.class
+com\xworkz\entity\Customer.class
+com\xworkz\controller\BankController.class
+com\xworkz\dao\CustomerImpl.class
+com\xworkz\entity\Bank.class
+com\xworkz\configure\MvcConfig.class
+com\xworkz\dao\BankDAO.class
+com\xworkz\service\CustomerServiceImpl.class
+com\xworkz\service\BankServiceImpl.class
+com\xworkz\entity\User.class

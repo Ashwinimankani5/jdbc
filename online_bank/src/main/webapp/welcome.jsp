@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Bank details saved</h1>
+${bname}
+
+<h1>Bank details searched</h1>
+<%-- ${branch_name.branchName}
+--%>
+ 
+
+<h1>Customer details saved</h1>
+${c_name}
+</body>
+</html>
